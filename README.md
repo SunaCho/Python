@@ -1,2 +1,2 @@
 # Python
-Repository for studying Python.
+기초부터 공부하고 있습니다 ❤️
