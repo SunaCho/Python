@@ -17,5 +17,4 @@ for i in range(1,len(lst)):
                 stack[-2]+=stack[-1]
             sum+=1+stack[-1]
             stack.pop()
-
 print(sum)
