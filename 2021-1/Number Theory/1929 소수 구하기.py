@@ -10,7 +10,14 @@ for i in range(2,1000001):
             isPrime[j]=True
 
 
-num=list(map(int,sys.stdin.readline().split()))
-for i in range(num[0], num[1]+1,1):
-    if isPrime[i]==False:
-        print(i)
+M,N=map(int,sys.stdin.readline().split()) 
+for i in range(M,N+1):
+    if M==1:
+        for i in range(2,N+1):
+            if isPrime[i]==False:
+                print(i)
+        break
+
+    elif M>=2:
+        if isPrime[i]==False:
+            print(i)
