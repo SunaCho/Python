@@ -1,46 +1,47 @@
 import sys
 from collections import deque
+input=lambda: sys.stdin.readline().strip()
 
-Deque=deque()
 N=int(input())
+Deque=deque()
 
 for i in range(N):
-    cmd=list(map(str,sys.stdin.readline().split()))
+    a,*b=input().split()
 
-    if cmd[0]=='push_front':
-        Deque.appendleft(int(cmd[1]))
+    if a=='push_front':
+        Deque.appendleft(int(b[0]))
 
-    elif cmd[0]=='push_back':
-        Deque.append(int(cmd[1]))
+    elif a=='push_back':
+        Deque.append(int(b[0]))
 
-    elif cmd[0]=='pop_front':
+    elif a=='pop_front':
         if Deque:
-            print(Deque.popleft(0))
+            print(Deque.popleft())
         else:
             print("-1")
 
-    elif cmd[0]=='pop_back':
+    elif a=='pop_back':
         if Deque:
-            print(Deque.pop(0))
+            print(Deque.pop())
         else:
             print("-1")
 
-    elif cmd[0]=='size':
+    elif a=='size':
         print(len(Deque))
 
-    elif cmd[0]=="empty":
+    elif a=="empty":
         if len(Deque)==0:
             print(1)
         else:
             print(0)
 
-    elif cmd[0]=='front':
+    elif a=='front':
         if Deque:
             print(Deque[0])
         else:
             print("-1")
 
-    elif cmd[0]=='back':
+    elif a=='back':
         if Deque:
             print(Deque[-1])
         else:
