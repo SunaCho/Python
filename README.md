@@ -1,2 +1,2 @@
 # Python
-백준 @rougefleur (❤️)
+* 백준 @rougefleur
